@@ -1,34 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Clock.MainPage">
     <ScrollView>
-        <AbsoluteLayout HorizontalOptions="Center">
-            <Ellipse Stroke="Black" Background="White" WidthRequest="500" HeightRequest="500" />
-            <Image Source="clock.png"  WidthRequest="501" />
+        <AbsoluteLayout HorizontalOptions="Center" x:Name="ClockLayout">
+            <Ellipse Stroke="Black" StrokeThickness="30" Background="White" WidthRequest="500" HeightRequest="500" />
             <BoxView TranslationY="150" TranslationX="168" Color="WhiteSmoke" WidthRequest="168" HeightRequest="45"/>
             <Border TranslationY="150" TranslationX="168">
                 <Label x:Name="timeLabel" Text="00 : 00 : 00" TextColor="Black" FontSize="Large" FontAttributes="Bold" />
             </Border>
-            <Line x:Name="clockhandHour"
-                Stroke="Black" StrokeThickness="8"
-                Y1="125"
-                TranslationY="250" TranslationX="250" 
-                RotationX="180" Rotation="0"
-                AnchorX="0.5" AnchorY="0"
-                />
-            <Line x:Name="clockhandMinute"
-                Stroke="Black" StrokeThickness="3"
-                Y1="175"
-                TranslationY="250" TranslationX="250" 
-                RotationX="180" Rotation="90"
-                AnchorX="0.5" AnchorY="0"
-                />
-            <Line x:Name="clockhandSecond"
-                Stroke="Red"
-                Y1="200"
-                TranslationY="250" TranslationX="250" 
-                RotationX="180" Rotation="180"
-                AnchorX="0.5" AnchorY="0"
-                />
+            
+            <Rectangle x:Name="clockhandHour" BackgroundColor="Black"
+                       WidthRequest="10" HeightRequest="150" 
+                       TranslationY="250" TranslationX="250" 
+                       RotationX="180" AnchorX="0.5" AnchorY="0"
+                       />
+
+            <Rectangle x:Name="clockhandMinute" BackgroundColor="Black" 
+                       WidthRequest="5" HeightRequest="200" 
+                       TranslationY="250" TranslationX="250" 
+                       RotationX="180" AnchorX="0.5" AnchorY="0"
+                       />
+
+            <Rectangle x:Name="clockhandSecond" BackgroundColor="Red" 
+                       WidthRequest="3" HeightRequest="200" 
+                       TranslationY="250" TranslationX="250" 
+                       RotationX="180" AnchorX="0.5" AnchorY="0"
+                       />
+
+            <BoxView BackgroundColor="Black" 
+                     WidthRequest="10" HeightRequest="10" 
+                     TranslationX="250" TranslationY="245"
+                     />
         </AbsoluteLayout>
     </ScrollView>
 </ContentPage>
