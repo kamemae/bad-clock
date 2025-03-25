@@ -7,7 +7,7 @@
             <Border TranslationY="150" TranslationX="168">
                 <Label x:Name="timeLabel" Text="00 : 00 : 00" TextColor="Black" FontSize="Large" FontAttributes="Bold" />
             </Border>
-            
+
             <Rectangle x:Name="clockhandHour" BackgroundColor="Black"
                        WidthRequest="10" HeightRequest="150" 
                        TranslationY="250" TranslationX="250" 
