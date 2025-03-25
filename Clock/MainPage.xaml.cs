@@ -51,3 +51,4 @@ namespace Clock {
         }
     }
 }
+//github kurwa czemu nie chcesz tego dodac?
