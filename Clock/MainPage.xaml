@@ -2,34 +2,94 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Clock.MainPage">
     <ScrollView>
         <AbsoluteLayout HorizontalOptions="Center" x:Name="ClockLayout">
-            <Ellipse Stroke="Black" StrokeThickness="30" Background="White" WidthRequest="500" HeightRequest="500" />
+            <Ellipse Stroke="Black" StrokeThickness="15" Background="White" WidthRequest="500" HeightRequest="500" />
+
+            <Rectangle Background="Black" WidthRequest="10" HeightRequest="500"  AbsoluteLayout.LayoutBounds="0,0,510,500"
+                Rotation="0" />
+            <Rectangle Background="Black" WidthRequest="10" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="30" />
+            <Rectangle Background="Black" WidthRequest="10" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="60" />
+            <Rectangle Background="Black" WidthRequest="10" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="90" />
+            <Rectangle Background="Black" WidthRequest="10" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="120" />
+            <Rectangle Background="Black" WidthRequest="10" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="150" />
+
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,510,500"
+                Rotation="6" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,510,500"
+                Rotation="12" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,510,500"
+                Rotation="18" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="24" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="36" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="42" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="48" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="54" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="66" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="72" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="78" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="84" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="96" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="102" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="108" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="114" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="126" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="108" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="132" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="138" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="144" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="156" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="108" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="162" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="168" />
+            <Rectangle Background="Black" WidthRequest="5" HeightRequest="500" AbsoluteLayout.LayoutBounds="0,0,500,500"
+                Rotation="174" />
+
+            <Ellipse Background="White" WidthRequest="450" HeightRequest="450" AbsoluteLayout.LayoutBounds="0,0,500,500"/>
+
             <BoxView TranslationY="150" TranslationX="168" Color="WhiteSmoke" WidthRequest="168" HeightRequest="45"/>
+
             <Border TranslationY="150" TranslationX="168">
-                <Label x:Name="timeLabel" Text="00 : 00 : 00" TextColor="Black" FontSize="Large" FontAttributes="Bold" />
+                <Label x:Name="timeLabel" Text="00 : 00 : 00" TextColor="Black" FontSize="Large" FontAttributes="Bold"/>
             </Border>
 
             <Rectangle x:Name="clockhandHour" BackgroundColor="Black"
-                       WidthRequest="10" HeightRequest="150" 
-                       TranslationY="250" TranslationX="250" 
-                       RotationX="180" AnchorX="0.5" AnchorY="0"
-                       />
-
+                       WidthRequest="10" HeightRequest="150" TranslationY="250" TranslationX="250" 
+                       RotationX="180" AnchorX="0.5" AnchorY="0"/>
             <Rectangle x:Name="clockhandMinute" BackgroundColor="Black" 
-                       WidthRequest="5" HeightRequest="200" 
-                       TranslationY="250" TranslationX="250" 
-                       RotationX="180" AnchorX="0.5" AnchorY="0"
-                       />
-
+                       WidthRequest="5" HeightRequest="200" TranslationY="250" TranslationX="250" 
+                       RotationX="180" AnchorX="0.5" AnchorY="0"/>
             <Rectangle x:Name="clockhandSecond" BackgroundColor="Red" 
-                       WidthRequest="3" HeightRequest="200" 
-                       TranslationY="250" TranslationX="250" 
-                       RotationX="180" AnchorX="0.5" AnchorY="0"
-                       />
+                       WidthRequest="3" HeightRequest="200" TranslationY="250" TranslationX="250" 
+                       RotationX="180" AnchorX="0.5" AnchorY="0"/>
 
-            <BoxView BackgroundColor="Black" 
-                     WidthRequest="10" HeightRequest="10" 
-                     TranslationX="250" TranslationY="245"
-                     />
+            <BoxView BackgroundColor="Red" WidthRequest="10" HeightRequest="10" TranslationX="250" TranslationY="245"/>
+            <Button Text="=" FontSize="24" WidthRequest="25" HeightRequest="25" Rotation="90" x:Name="pausePlay" Clicked="PausePlay"/>
         </AbsoluteLayout>
     </ScrollView>
 </ContentPage>
